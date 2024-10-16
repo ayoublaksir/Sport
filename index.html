@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportify | Elevate Your Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo" class="logo-img">
+            <h1 class="site-title">Sportify</h1>
+        </div>
+        
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-title-container">
+                
+                <h2 class="hero-title">Take Your Game to the <span class="highlight">Next Level</span></h2>
+            </div>
+            <p class="hero-description">
+                Upgrade your performance with the latest products, insights, and exclusive recommendations designed for every athlete.
+            </p>
+            <button class="modern-button" onclick="scrollToSection('products')">Explore Products</button>
+        </div>
+        <div class="hero-image">
+            <img src="images/athlet.png" alt="Athlete Training">
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="section-header">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="title-decor"></div>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/shot.png" alt="Running Shoes">
+                <h3>Pro Running Shoes</h3>
+                <p>Designed for speed, comfort, and long-distance running.</p>
+                <button class="modern-button">View Product</button>
+            </div>
+            <div class="product-card">
+                <img src="images/watch.png" alt="Smartwatch">
+                <h3>Fitness Smartwatch</h3>
+                <p>Track your progress with real-time analytics.</p>
+                <button class="modern-button">View Product</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="section-header">
+            <h2 class="section-title">Our services</h2>
+            <div class="title-decor"></div>
+        </div>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Performance Analytics</h3>
+                <p>Access real-time metrics to improve your training efficiency.</p>
+            </div>
+            <div class="service-card">
+                <h3>Gear Recommendations</h3>
+                <p>Explore the best sports equipment tailored to your goals.</p>
+            </div>
+            <div class="service-card">
+                <h3>Exclusive Discounts</h3>
+                <p>Receive special offers on premium products.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="footer-header">
+            
+            <h2 class="section-title">Stay Connected</h2>
+        </div>
+        <form class="newsletter">
+            <input type="email" placeholder="Enter your email" required>
+            <button class="modern-button">Subscribe</button>
+        </form>
+        <div class="social-links">
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+        <p>&copy; 2025 Sportify. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
