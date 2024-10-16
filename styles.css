@@ -148,12 +148,15 @@ body {
     padding-top: 2rem;
 }
 
+/* Product and Service Grid - Responsive Design */
 .product-grid, .service-grid {
-    padding-top: 0; /* Remove padding between the section header and product cards */
-    margin-top: 0;  /* Ensure no margin between title and grid */
     display: flex;
-    gap: 2rem; /* Maintain space between individual cards */
+    gap: 2rem;
     justify-content: center;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.12);
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
 }
 
 .product-card, .service-card {
@@ -163,11 +166,26 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
+    flex: 1 1 calc(50% - 2rem); /* Two cards per row, with space */
+    max-width: calc(50% - 2rem);
 }
 
 .product-card:hover, .service-card:hover {
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    .product-card, .service-card {
+        flex: 1 1 100%; /* One card per row on mobile */
+        max-width: 100%;
+    }
+
+    .product-grid, .service-grid {
+        padding: 1rem; /* Adjust padding for smaller screens */
+        gap: 1rem; /* Reduce gap for better spacing */
+    }
+}
+
 
 /* Footer Styles */
 .footer {
