@@ -308,3 +308,62 @@ img:hover {
 .social-icon:hover {
     color: #8D99AE;
 }
+/* Try to Win Section */
+.try-to-win-section {
+    background-color: #626F47;
+    color: #F4F1EF;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.try-to-win-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.try-to-win-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.try-to-win-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.try-to-win-button {
+    background-color: #EF233C;
+    color: #F4F1EF;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.try-to-win-button:hover {
+    background-color: #D90429;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .button-group {
+        flex-direction: column;
+    }
+
+    .try-to-win-button {
+        width: 100%; /* Make buttons full-width on small screens */
+    }
+}
+
