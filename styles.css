@@ -366,4 +366,92 @@ img:hover {
         width: 100%; /* Make buttons full-width on small screens */
     }
 }
+/* Win Section Styles */
+.win-section {
+    padding: 4rem 2rem;
+    background-color: #F4F1EF;
+    text-align: center;
+}
+
+/* Header for Win Section */
+.win-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #626F47;
+}
+
+.win-header p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #2B2D42;
+}
+
+/* Container for Cards */
+.win-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Win Item - 3D Card Effect */
+.win-item {
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card {
+    transform-style: preserve-3d; /* Enable 3D effect for child elements */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; /* Make sure cards take up full height */
+}
+
+.card:hover {
+    transform: rotateY(15deg) rotateX(10deg) scale(1.05); /* 3D effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Win Image */
+.win-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    border-radius: 15px;
+    object-fit: cover; /* Ensures images fill the area evenly */
+}
+
+/* Win Label */
+.win-label {
+    font-size: 1.2rem;
+    color: #626F47;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .win-container {
+        grid-template-columns: 1fr; /* Stacks the cards vertically on smaller screens */
+    }
+
+    .card {
+        width: 100%; /* Take up more width on smaller screens */
+    }
+}
+
+@media (min-width: 769px) {
+    .win-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    }
+}
+
 
